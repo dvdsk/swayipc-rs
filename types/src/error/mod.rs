@@ -27,4 +27,6 @@ pub enum Error {
     CommandParse(String),
     #[error("could not find the socket for neither i3 nor sway")]
     SocketNotFound,
+    #[error("Could not find the sway process")]
+    CouldNotFindSwayProcess,
 }
